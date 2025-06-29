@@ -23,6 +23,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
+{/*
 <!-- Google tag (gtag.js) -->
 <script async is:inline src=`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_GTAG}`></script>
 <script>
@@ -39,6 +40,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   // @ts-ignore
   gtag("config", GOOGLE_GTAG);
 </script>
+*/}
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
