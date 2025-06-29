@@ -38,7 +38,7 @@ export const MENUS = [
   },
 ];
 
-export const FOOTER_CONTENT = "Szymon Maćkowiak - wszelkie prawa zastrzeżone.";
+export const FOOTER_CONTENT = "Szymon Maćkowiak";
 
 export const CONTACTS = {
   x: "https://x.com/smokiicd",
