@@ -1,0 +1,65 @@
+---
+title: 'Zobaczyć jak działa sztuczna sieć neuronowa'
+date: '2025-06-29'
+description: "Aby zrozumieć - warto zobaczyć. W tym wpisie zbieram linki do najciekawszych miejsc dostęonych w Sieci, w których znajdujemy wizualizacje działania sztucznych sieci neuronowych."
+tags: [
+	'complexity',
+	'computer science',
+	]
+cover: '/img/conny-schneider-xuTJZ7uD7PI-unsplash.jpg'
+---
+## Zobaczyć jak działa sztuczna sieć neuronowa
+
+### 1. Wprowadzenie
+
+Sztuczne sieci neuronowe stanowią obecnie jedną z najważniejszych technik uczenia maszynowego (machine learning - ML), a tym samym jedną z najważniejszych technik sztucznej inteligencji w ogóle. W związku z tym ich działanie, zachowanie i właściwości są dla nas szczególnie ważne. Często, żeby wyrobić sobie pogląd na temat działania dowolnego mechanizmu, urządzenia czy maszyny - musimy zajrzeć do środka i zobaczyć co się dzieje "pod maską". Dokładnie tak robimy (chociaż - być może dotyczy to wyłącznie czasów mojego dzieciństwa), kiedy chcemy zrozumieć jak działa samochód, komputer, radioodbiornik, zegar mechaniczny, czy dowolne inne urządzenie - otwieramy obudowę i zaglądamy do środka lub (o zgrozo!) - rozbieramy na części. Bez względu na stopień złożoności układu - warto zajrzeć do środka, aby zobaczyć współpracę poszczególnych elementów. Dzięki symulacjom i wizualizacjom komputerowym, ze sztucznymi sieciami neuronowymi możemy postąpić  w podobny sposób. Możemy zarówno śledzić ich działanie i proces nauczania krok po kroku (innymi słowy - iteracja po iteracji), jak również obserwować działanie już wyuczonych sieci neuronowych różnych typów. W tym wpisie zbieram i załączam linki do najciekawszych (moim zdaniem) materiałów dostępnych w sieci wraz z podaniem autorów i krótkim opisem, czego możemy nauczyć się z tych materiałów. 
+
+### 2. Uczenie pojedynczych neuronów i prostych sieci
+
+Nie ma co ukrywać - gromadzę tu głównie efekty własnych poszukiwań, kiedy starałem się dotrzeć do mediów (symulacji, animacji, filmów), które pomogłyby mi zrozumieć czym są i jak działają sztuczne neurony, oraz budowane z nich sieci. Poniżej moja (subiektywnie najlepsza) lista dostępnych materiałów. 
+
+#### 2.1 Daniel Shiffman - "The nature of code"
+
+Pierwszym miejscem, które chciałbym przywołać są książki i materiały publikowane przez Daniela Shiffmana (strona: https://thecodingtrain.com). Działaniu sztucznych neuronów oraz tworzonym z nich sieciom poświęcił ostatnie rozdziały kolejnych wydań swojej książki - "The nature od code". Pierwsza edycja książki (2012) zawiera przykłady napisane w języku Java dla środowiska Processing (https://processing.org). Obecnie książka jest dostępna w postaci archiwum pod adresem: https://noc-processing-archive.netlify.app. Kolejna edycja książki (2024) została rozbudowana o kolejny rozdział dotyczący sztucznej inteligencji i zawiera przykłady tworzone w języku JavaScript z wykorzystaniem biblioteki p5js (https://p5js.org). Książka jest dostępna pod adresem: https://natureofcode.com. Prezentacje wideo treści książki wraz z procesem tworzenia programów Shiffman publikuje w ramach swojego kanału w serwisie YouTube pod adresem: https://www.youtube.com/@TheCodingTrain. Tematowi sztucznej inteligencji poświęca on odrębną playlistę: https://www.youtube.com/watch?v=sPEEV8Xih20&list=PLRqwX-V7Uu6YJ3XfHhT2Mm4Y5I99nrIKX. W tym wpisie skupiam się konkretnie na działaniu pojedynczych neuronów prostych sieci, dlatego poniżej wymieniam bezpośrednie linki do wyjaśnień i demonstracji ich działania. Będę odnosić się do aktualnego wydania książki, a więc do wydania z roku 2024:
+
+- Działanie perceptronu: https://natureofcode.com/neural-networks/#the-perceptron - materiał przedstawia ideę działania pojedynczego perceptronu oraz jego nauczania, wraz z przykładem nauki perceptronu klasyfikowania punktów na te, które znajdują się powyżej, bądź poniżej zadanej prostej.
+
+- Prezentacja wideo programowania perceptronu: część 1 - https://www.youtube.com/watch?v=ntKn5TPHHAk, część 2 - https://www.youtube.com/watch?v=DGxIcDjPzac. W nagraniach wideo Shiffman tworzy perceptron i prowadzi proces jego nauki klasyfikacji na punktu powyżej, bądź poniżej zadanej prostej. 
+
+
+
+#### 2.2 Uri Wilensky - NetLogo
+
+Drugim miejscem, które w moim odczuciu zawiera znakomite materiały wyjaśniające działanie sztucznych sieci neuronowych jest strona projektu NetLogo: https://ccl.northwestern.edu/netlogo/ którą prowadzi Uri Wilensky. NetLogo to środowisko symulacji agendowych, które jest wyposażone w bardzo bogatą kolekcję modeli, na których można eksperymentować i rozwijać zrozumienie działania układów złożonych (Wilensky, U. (1999). NetLogo. http://ccl.northwestern.edu/netlogo/. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.). 
+
+Strona umożliwia przejście do przeglądarkowe wersji środowiska: https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/IABM%20Textbook/chapter%208/Sandpile%20Simple.nlogo, a tam możemy znaleźć dwa modele związane z działaniem sztucznych neuronów:
+
+- https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Sample%20Models/Computer%20Science/Artificial%20Neural%20Net%20-%20Perceptron.nlogo (Rand, W. and Wilensky, U. (2006). NetLogo Artificial Neural Net - Perceptron model. http://ccl.northwestern.edu/netlogo/models/ArtificialNeuralNet-Perceptron. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.) - model umożliwia naukę jednego perceptronu i demonstruje trudności związane z rozwiązywaniem problemów nieseparowanych liniowo. 
+- https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Sample%20Models/Computer%20Science/Artificial%20Neural%20Net%20-%20Multilayer.nlogo (Rand, W. and Wilensky, U. (2006). NetLogo Artificial Neural Net - Multilayer model. http://ccl.northwestern.edu/netlogo/models/ArtificialNeuralNet-Multilayer. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.) - model umożliwia badanie prostej sieci perceptronów i demonstruje, że sieć perceptronów może rozwiązywać problemy niemożliwe do rozwiązania przez pojedynczy perceptron. 
+
+### 3. Wizualizacje wyuczonych sieci i wyjaśnienia zaawansowanych algorytmów
+
+W serwisie YouTube można znaleźć również kilka znakomitych wizualizacji tego jak działają już wyuczone sieci neuronowe. Można również znaleźć kilka świetnych animacji wyjaśniających bardziej skomplikowane konstrukcje takie jak konwolucyjne sieci neuronowe. Poniżej wymieniam kilka, które zrobiły na mnie największe wrażenie:
+
+#### 3.1 Filmy na kanale YouTube użytkownika: [Marijn van Vliet](https://www.youtube.com/@wmvanvliet)
+
+- https://www.youtube.com/watch?v=Tsvxx-GGlTg
+- https://www.youtube.com/watch?v=sDDjJRnnHao
+
+Filmy przedstawiają przebieg klasyfikacji ręcznie pisanych cyfr (zbiór danych MNIST) z wykorzystaniem wielowarstwowych sieci neuronowych.
+
+#### 3.2 Film na kanale YouTube użytkownika: [Denis Dmitriev](https://www.youtube.com/@DenisDmitrievDeepRobotics)
+
+- https://www.youtube.com/watch?v=3JQ3hYko51Y
+
+Filmy przedstawiają przebieg klasyfikacji ręcznie pisanych cyfr (zbiór danych MNIST) z wykorzystaniem różnych typów  sieci neuronowych (Neural Network, Multilayer Perceptron, Convolutional Neural Network, Spiking Neural Network.
+
+#### 3.3 Kurs wideo na kanale Youtube użytkownika: [3Blue1Brown](https://www.youtube.com/@3blue1brown)
+
+- https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+
+Playlista stanowi kompletne i głębokie wyjaśnienie tego jak działają podstawowe sieci neuronowe. 
+
+### 4. Podsumowanie
+
+Tym sposobem doszliśmy do końca tego wpisu, w którym starałem się zebrać najważniejsze materiały, na które sam natknąłem się wcześniej w kontekście wizualizowania tego jak działają sztuczne sieci neuronowe. W przypadku znalezienia innych ciekawy materiałów - ten wpis będzie rozbudowywany. 
