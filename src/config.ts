@@ -115,7 +115,7 @@ export const PROJECTS = [
       id: "hobbajt",
       title: "Centrum edukacji HOBBAJT",
       description: "Od 2017 roku organizuję i prowadzę zajęcia komputerowe dla dzieci i młodzieży z programowania i tworzenia gier komputerowych. W kolejnych latach poszerzałem ofertę o zajęcia grupowe z matematyki i fizyki oraz korepetycje indywidualne. Obecnie przygotowuję swoje kursy w formie wideo. Zaczynałem od współpracy ze szkołami językowymi - obecnie mam swoją placówkę w Wolsztynie przy ulicy Dworcowej 6/10 (budynek dworca PKP). ",
-      image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: '/Users/szymonmackowiak/Astro/smoki-i-czarne-dziury/smokiiczarnedziury/public/img/photo-1487058792275-0ad4aaf24ca7.jpeg',
       externalLink: "https://hobbajt.pl",
       details: [
         "Organizacja i koordynacja zajęć edukacyjnych",
