@@ -15,16 +15,6 @@ export const defaultLang = 'pl';
 
 export const MENUS = [
   {
-    title: "O mnie",
-    link: "/me",
-    target: "_self",
-  },
-  {
-    title: "Wpisy",
-    link: "/pl/posts",
-    target: "_self",
-  },
-  {
     title: "Archiwum",
     link: "/tags",
     target: "_self",
