@@ -44,7 +44,7 @@ const coverSrc = isCoverObject ? `${cover.src}` : `${cover}`;
       <h1 id="header" class="text-5xl text-center font-title font-black text-white">{post.data.title}</h1>
       <div class="flex items-center justify-center gap-2">
         <DateTag date={post.data.date} />
-        {post.data.tags?.map((tag) => <Tag tag={tag} />)}
+        {post.data.tags?.map((tag : string) => <Tag tag={tag} />)}
       </div>
       <p class="text-lg text-center text-white max-w-[576px]">{post.data.description}</p>
     </div>
@@ -54,6 +54,12 @@ const coverSrc = isCoverObject ? `${cover.src}` : `${cover}`;
     class="relative flex flex-col gap-3 max-w-screen-md mx-auto px-4 sm:px-6 text-xl leading-relaxed text-white bg-neutral-900/90 rounded-lg"
   >
     <PostContent post={post} />
+
+    <p class="text-sm text-slate-400 text-center">
+  Komentarze obsługiwane przez <a href="https://github.com/giscus" class="underline hover:text-white">Giscus</a> 
+  i <a href="https://github.com" class="underline hover:text-white">GitHub</a>. Aby poznać więcej szczegółów zobacz - 
+  <a href="/pl/polityka-prywatnosci" class="underline hover:text-white">Polityka prywatności</a>.
+</p>
 
     <Giscus
   repo="szymonmackowiak/smokiiczarnedziury"
