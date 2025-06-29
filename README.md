@@ -23,7 +23,6 @@ The website was built using the **Astro** framework and the free `astro-leo-them
 ## 📄 Licencja | License
 
 Projekt oparty na szablonie [`astro-leo-theme`](https://github.com/moojing/astro-leo-theme) autorstwa [moojing](https://github.com/moojing), dostępnego na licencji MIT.
-
 The project is based on the [`astro-leo-theme`](https://github.com/moojing/astro-leo-theme) by [moojing](https://github.com/moojing), licensed under the MIT License.
 
 Zobacz plik [`LICENSE`](./LICENSE) po więcej informacji.  
