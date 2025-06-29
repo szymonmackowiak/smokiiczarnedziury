@@ -33,3 +33,8 @@ pre.astro-code {
 svg.rough-annotation {
   opacity: 70%;
 }
+
+a {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
