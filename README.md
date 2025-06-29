@@ -29,10 +29,11 @@ The project is based on the [`astro-leo-theme`](https://github.com/moojing/astro
 Zobacz plik [`LICENSE`](./LICENSE) po więcej informacji.  
 See [`LICENSE`](./LICENSE) for details.
 
+Publikowane na blogu treści objęte prawem autorskim (© Szymon Maćkowiak - wszelkie prawa zastrzeżone). 
+Content published on the blog is copyrighted (© Szymon Maćkowiak - all rights reserved).
 ---
 
 ## 📬 Kontakt | Contact
 
 - E-mail: szymon.mackowiak@gmail.com  
 - GitHub: [@szymonmackowiak](https://github.com/szymonmackowiak)  
-- Patronite: [patronite.pl/smokiiczarnedziury](https://patronite.pl/smokiiczarnedziury)
