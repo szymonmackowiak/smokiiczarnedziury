@@ -31,6 +31,7 @@ See [`LICENSE`](./LICENSE) for details.
 
 Publikowane na blogu treści objęte prawem autorskim (© Szymon Maćkowiak - wszelkie prawa zastrzeżone). 
 Content published on the blog is copyrighted (© Szymon Maćkowiak - all rights reserved).
+
 ---
 
 ## 📬 Kontakt | Contact
