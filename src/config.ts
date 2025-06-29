@@ -2,7 +2,7 @@
 
 export const SITE_FAVICON = "/favicon.png";
 export const SITE_LOGO = "/LOGO.png";
-export const SITE_TITLE = " "; 
+export const SITE_TITLE = ""; 
 export const SITE_URL = "https://smokiiczarnedziury.pl";
 export const SITE_DESCRIPTION =
   `
