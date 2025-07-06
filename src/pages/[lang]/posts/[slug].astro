@@ -55,6 +55,13 @@ const coverSrc = isCoverObject ? `${cover.src}` : `${cover}`;
   >
     <PostContent post={post} />
 
+    {post.data.lastmod && (
+  <p class="text-sm text-slate-400 text-center">
+    Ostatnia modyfikacja tekstu: {new Date(post.data.lastmod).toLocaleDateString("pl-PL")}
+  </p>
+)}
+
+
     <p class="text-sm text-slate-400 text-center">
   Komentarze obsługiwane przez <a href="https://github.com/giscus" class="underline hover:text-white">Giscus</a> 
   i <a href="https://github.com" class="underline hover:text-white">GitHub</a>. Aby poznać więcej szczegółów zobacz - 

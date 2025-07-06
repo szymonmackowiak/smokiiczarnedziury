@@ -20,6 +20,7 @@ const blog = defineCollection({
       tags: z.array(z.string()).optional(),
       // image or image url 
       cover: image().or(z.string()) ,
+      lastmod: z.string().optional(),
     }),
 });
 
