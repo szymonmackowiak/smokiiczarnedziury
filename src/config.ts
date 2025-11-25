@@ -39,7 +39,7 @@ export const CONTACTS = {
 };
 
 export const SLOGAN = "Smoki i czarne dziury";
-export const SUBSLOGAN = "nauka, fantastyka i technologie";
+export const SUBSLOGAN = "nauka, fantastyka, gry i technologie";
 
 export const ME_DESCRIPTION =
   `
