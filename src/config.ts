@@ -2,14 +2,14 @@
 
 export const SITE_FAVICON = "/favicon.png";
 export const SITE_LOGO = "/LOGO.png";
-export const SITE_TITLE = ""; 
+export const SITE_TITLE = "Smoki i Czarne Dziury";
 export const SITE_URL = "https://smokiiczarnedziury.pl";
 export const SITE_DESCRIPTION =
   `
   Blog, na którym zamieszczam treści związane z tym co lubię, a więc gry komputerowe, fantastyka, komiks i nauka - w szczególności fizyka, matematyka i nauka o złożoności. Można powiedzieć, że mnogość wątków - istne smoki i czarne dziury!
 `;
 export const ME_AVATAR = "/sm.jpg";
-export const LANGUAGES = ['pl'];
+export const LANGUAGES = ['pl', 'en'];
 
 export const defaultLang = 'pl';
 
