@@ -7,13 +7,22 @@ const Dropdown = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleLanguageChange = (lang: string) => {
-    setCurrentLanguage(lang);
+    // close dropdown immediately
     setIsOpen(false);
-    if (lang === currentLanguage) return;
+
+    // determine current path language
+    const current = window.location.pathname.split("/")[1] || "-";
+    if (lang === current) {
+      // no navigation if same language
+      setCurrentLanguage(lang);
+      return;
+    }
+
+    // navigate to posts listing of selected language
     if (lang === "-") {
       window.location.href = "/";
     } else {
-      window.location.href = `/${lang}`;
+      window.location.href = `/${lang}/posts`;
     }
   };
 
@@ -31,9 +40,7 @@ const Dropdown = () => {
     if (LANGUAGES.includes(language)) {
       setCurrentLanguage(language);
     }
-
     document.addEventListener("click", handleClickOutside);
-
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
@@ -58,14 +65,14 @@ const Dropdown = () => {
           className="absolute right-0 mt-2 w-20 origin-top-right rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
         >
-          {<div className="py-1">
+          {/*<div className="py-1">
             <button
               className="text-slate-400 inline-block px-4 py-2 text-sm hover:bg-slate-800 w-full"
               onClick={() => handleLanguageChange("-")}
             >
               -
             </button>
-          </div>}
+          </div>*/}
           {LANGUAGES.map((lang) => (
             <div className="py-1">
               <button
