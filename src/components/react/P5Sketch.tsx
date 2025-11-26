@@ -2,19 +2,23 @@ import React, { useRef, useEffect } from 'react';
 
 interface Props {
   sketchName?: string;
+  sketchFn?: any;
   width?: number;
   height?: number;
   className?: string;
 }
 
-export default function P5Sketch({ sketchName = 'bouncingBall', width = 600, height = 300, className }: Props) {
+export default function P5Sketch({ sketchName = 'bouncingBall', sketchFn: sketchProp, width = 600, height = 300, className }: Props) {
   const elRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     let p5Instance: any;
     let mounted = true;
 
-    const sketches = import.meta.glob('/src/components/react/p5-sketches/*.{ts,js,tsx,jsx}', { eager: false });
+    // Prefer relative globs (relative to this file) - more reliable with Vite
+    const sketchesA = import.meta.glob('./p5-sketches/*.{ts,js,tsx,jsx}', { eager: false });
+    const sketchesB = import.meta.glob('./sketches/*.{ts,js,tsx,jsx}', { eager: false });
+    const sketches = { ...(sketchesA as Record<string, any>), ...(sketchesB as Record<string, any>) } as Record<string, () => Promise<any>>;
 
     async function init() {
       if (!elRef.current) return;
@@ -27,9 +31,14 @@ export default function P5Sketch({ sketchName = 'bouncingBall', width = 600, hei
 
       // 2. Znajdź i załaduj moduł sketch przez import.meta.glob
       const keys = Object.keys(sketches);
+      // debug: log available sketches
+      // eslint-disable-next-line no-console
+      console.debug('[P5Sketch] discovered sketch keys:', keys);
       // dopasuj końcówkę do sketchName (e.g. 'bouncingBall')
-      const keyMatch = keys.find(k => k.endsWith(`/${sketchName}.ts`) || k.endsWith(`/${sketchName}.js`) || k.endsWith(`/${sketchName}.tsx`));
-      let sketchFn: any = undefined;
+      const keyMatch = keys.find(k => k.includes(`${sketchName}.`));
+      // eslint-disable-next-line no-console
+      console.debug('[P5Sketch] keyMatch:', keyMatch);
+      let sketchFn: any = sketchProp ?? undefined;
 
       if (keyMatch) {
         const loader: any = sketches[keyMatch];

@@ -10,5 +10,6 @@ cover: '/img/photo-1656077217715-bdaeb06bd01f.jpeg'
 lastmod: '2025-11-29'
 ---
 import P5Sketch from '/src/components/react/P5Sketch.tsx';
+import bouncingBall from '/src/components/react/sketches/bouncingBall';
 
-<P5Sketch client:load sketchName="bouncingBall" width={600} height={300} />
+<P5Sketch client:load sketchFn={bouncingBall} width={600} height={300} />
