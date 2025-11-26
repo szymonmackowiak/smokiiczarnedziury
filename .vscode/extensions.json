@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "mdx-js.vscode-mdx",
+    "yzhang.markdown-all-in-one",
+    "goessner.mdmath",
+    "esbenp.prettier-vscode"
+  ]
+}

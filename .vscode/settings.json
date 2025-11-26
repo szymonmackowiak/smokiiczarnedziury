@@ -1,0 +1,19 @@
+{
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "markdown.extension.math.enabled": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "astro",
+    "markdown"
+  ],
+  "editor.formatOnSave": true
+}
