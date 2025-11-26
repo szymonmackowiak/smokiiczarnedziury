@@ -39,6 +39,9 @@ export default function P5Sketch({ sketchName = 'bouncingBall', sketchFn: sketch
       // eslint-disable-next-line no-console
       console.debug('[P5Sketch] keyMatch:', keyMatch);
       let sketchFn: any = sketchProp ?? undefined;
+      // debug: is a sketch function passed as prop?
+      // eslint-disable-next-line no-console
+      console.debug('[P5Sketch] sketchProp defined?', !!sketchProp);
 
       if (keyMatch) {
         const loader: any = sketches[keyMatch];
